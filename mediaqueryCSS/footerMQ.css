@@ -1,0 +1,36 @@
+@media screen and (max-width: 480px) {
+
+/*======================FOOTER====================*/
+.footer-content
+{
+    left: 160px;
+    width: calc(100% - 161px);
+}
+/*====================SIDEBAR ACTIVE TO FOOTER========================*/
+.sidebar.active ~ .footer-content
+{
+    left: 0px;
+    width: calc(100% - 1px);
+}
+.footer-content .user-link-option
+{
+    display: flex;
+    flex-direction: column;
+}
+.footer-content .user-link-option h2 
+{
+    font-size: 22px;
+    font-weight: 100;
+}
+.footer-content .user-link-option a 
+{
+    font-size: 14px;
+}
+/*========================LICENSE============================*/
+.footer-content .owner-lincense p 
+{
+    padding-bottom: 20px;
+    font-size: 10px;
+    font-weight: 600;
+}
+}

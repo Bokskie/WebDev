@@ -1,0 +1,93 @@
+.sidebar
+{
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    border-radius: 1rem;
+    background: #00aa6c;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+}
+.sidebar.active
+{
+    width: 210px;
+    transition: all 0.5s ease;
+}
+.sidebar .sidebar-branch
+{
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-align: center;
+}
+.sidebar .sidebar-branch span
+{
+    color: #ffffffbd;
+}
+.sidebar .sidebar-branch h2 
+{
+    margin-top: 4px;
+    position: absolute;
+    left: 60px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.sidebar .sidebar-branch img 
+{
+    mix-blend-mode: darken;
+}
+/*======================SIDEBAR OPTION========================*/
+.sidebar-option
+{
+    position: relative;
+    top: 40px;
+    left: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.sidebar-option a
+{
+    display: flex;
+    line-height: 4.4rem;
+    gap: 3rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.sidebar-option span 
+{
+    line-height: 4.4rem;
+    position: relative;
+    left: 16px;
+    color: #000000;
+}
+.sidebar-option h3 
+{
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+.sidebar-option .log-out
+{
+    margin-top: 60px;
+}
+.sidebar .sidebar-optio ul li a.active,
+.sidebar .sidebar-option ul li a:hover 
+{
+    background: #ffffff;
+    transition: all 0.9s ease;
+}
+.sidebar .sidebar-option ul li a.active
+{
+    background: #ffffff;
+}
+/* =============SIDEBAR AND MAIN CONTENT FUNCTION JAVASCRIPT=========*/
+.sidebar.active ~ .main-content
+{
+    left: 60px;
+    width: calc(100% - 61px);
+}
+

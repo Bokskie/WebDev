@@ -1,0 +1,57 @@
+@media screen and (max-width: 480px) {
+
+/*======================MAIN CONTENT ======================*/
+.main-content
+{
+    top: 30vh;
+    left: 160px;
+    width: calc(100% - 181px);
+}
+.main-content .items .item
+{
+    padding: 20px;
+    width: 240px;
+    height: 40vh;
+}
+.sidebar.active ~ .main-content
+{
+    left: 30px;
+    width: calc(100% - 61px);
+}
+/*=======================USER ADDRESS=========================*/
+.main-content .user-address
+{
+    width: 80%;
+    padding: 10px;
+    padding-top: 10px;
+}
+.main-content .user-address span 
+{
+    position: relative;
+   
+}
+.main-content .user-address h1 
+{
+    color: #00aa6c;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+.main-content .user-address input 
+{
+    width: 60%;
+}
+.main-content .user-address button
+{
+    border-radius: 3rem;
+    padding: 8px;
+    background: #00aa6c;
+    cursor: pointer;
+}
+.main-content .user-address input:hover 
+{
+    background: #20ffad;
+}
+
+}

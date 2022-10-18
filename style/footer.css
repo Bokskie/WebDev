@@ -1,0 +1,82 @@
+/*===========================FOOTER========================*/
+.footer-content
+{
+    background: #949494;
+    position: relative;
+    left: 60px;
+    top: 20rem;
+    height: 100vh;
+    width: calc(100% - 61px);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+/*================SIDEBAR ACTIVE TO DOWN CONTENT=====================*/
+.sidebar.active ~ .footer-content
+{
+    left: 210px;
+    width: calc(100% - 211px);
+}
+.footer-content .user-link-option
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 5rem;
+    padding: 10px;
+    overflow-x: hidden;
+}
+.footer-content .user-link-option h2 
+{
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+}
+.footer-content .user-link-option a 
+{
+    color: #e4e4e4;
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.footer-content .user-link-option span 
+{
+    position: relative;
+    top: 5px;
+    color: rgb(5, 211, 5);
+}
+.footer-content .user-link-option a:hover 
+{
+    background: #00aa6c;
+    border-radius: 3rem;
+}
+.footer-content .user-link-option .our-menu
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+}
+.footer-content .user-link-option .our-link
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 3rem;
+    gap: 2rem;
+}
+.footer-content .user-link-option .our-link img 
+{
+    position: relative;
+    left: 1rem;
+    top: 0.5rem;
+}
+/*================================LICENSE===========================*/
+.footer-content .owner-lincense
+{
+    margin-top: 2rem;
+    text-align: center;
+}
+.footer-content .owner-lincense p 
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}

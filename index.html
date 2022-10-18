@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOOD ORDERING SYSTEM</title>
+    <!--WEBSITE LOGO ICON-->
+
+    <link rel="shortcut icon" type="image/x-icon" href="./image/logo.png">
+    
+    <!--CSS LINK-->
+
+    <link rel="stylesheet" type="text/css" href="style/mainContent.css">
+
+    <!--SIDE BAR LINK-->
+    <link rel="stylesheet" type="text/css" href="./style/sidebar.css">
+
+    <!--HEADER-->
+    <link rel="stylesheet" type="text/css" href="./style/header.css">
+
+    <!--FIRST CONTENT-->
+
+    <link rel="stylesheet" type="text/css" href="./style/firstcontent.css">
+
+    <!--SECOND CONTENT-->
+
+    <link rel="stylesheet" type="text/css" href="./style/secondContent.css">
+
+    <!--ORDERING SECTION-->
+
+    <link rel="stylesheet" type="text/css" href="./style/orderingSection.css">
+    
+    <!--FOOTER-->
+
+    <link rel="stylesheet" type="text/css" href="./style/footer.css">
+
+    <!--=================@MEDIA QUERY LINK==================-->
+    <link rel="stylesheet" type="text/css" href="./style/mediaquery.css">
+
+    <link rel="stylesheet" type="text/css" href="./mediaqueryCSS/footerMQ.css">
+
+    <link rel="stylesheet" type="text/css" href="./mediaqueryCSS/sidebarMQ.css">
+
+    <link rel="stylesheet" type="text/css" href="./mediaqueryCSS/headerMQ.css">
+
+    <link rel="stylesheet" type="text/css" href="./mediaqueryCSS/mainContentMQ.css">
+
+    <!--MATERIALS ICON-->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<!--===================================SIDEBAR=================================-->
+
+        <aside class="sidebar">
+            <div class="sidebar-branch">
+                <img src="./image/logo.png" width="40" height="40" alt="">
+                <h2>KAN<span>-ANAN</span></h2>
+            </div>
+
+            <div class="sidebar-option">
+
+            <ul>
+
+                <li><a href="#firstcontent" class="sidebar-link active">
+                    <span class="material-symbols-sharp">
+                        store
+                        </span>
+                    <h3>Home</h3>
+                </a></li>
+
+
+                <li><a href="#main" class="sidebar-link">
+                    <span class="material-symbols-sharp">
+                    menu_book
+                    </span>
+                    <h3>Menu</h3>
+                </a></li>
+
+
+                <li><a href="#secondcontent" class="sidebar-link">
+                    <span class="material-symbols-sharp">
+                        border_color
+                        </span>
+                    <h3>FoodRecipes</h3>
+                </a></li>
+
+
+                <li><a href="#ordersection" class="sidebar-link">
+                    <span class="material-symbols-sharp">
+                        shopping_cart_checkout
+                        </span>
+                    <h3>OrderNow!</h3>
+                </a></li>
+
+                <li><a href="#footer" class="sidebar-link">
+                    <span class="material-symbols-sharp">
+                        call
+                        </span>
+                    <h3>Contact</h3>
+                </a></li>
+              
+                <li><a href="" class="sidebar-link log-out">
+                    <span class="material-symbols-sharp">
+                        logout
+                    </span>
+                        <h3>LogOut</h3>
+                </a></li>
+            </ul>
+            </div>
+       
+        </aside>
+
+
+
+
+
+
+
+
+
+<!--===============================HEADER================================-->
+        <header class="header">
+            <div class="dashboard">
+                <span class="material-symbols-sharp sidebarBtn">
+                    menu
+                    </span>
+                 <h1>KAN-ANAN</h1>   
+                
+                <div class="user-search-bar">
+                    <form action="" method="POST">
+                        <input class="searching-box" type="search" placeholder="Search...">
+                        <button class="button-box" type="button"><span class="material-symbols-sharp">
+                            search
+                            </span></button>
+                    </form>
+                </div>
+
+                <div class="user-profile">
+                    <span class="material-symbols-sharp">
+                        account_circle
+                        </span>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+
+<!--=====================FIRST CONTENT ADVERTISEMENT=======================-->
+    <section id="firstcontent" class="first-content">
+       
+        
+        <p><span> USTP CANTEEN</span> palit namo<br>
+        barato ra, lami pa! mao kaon namo diri</p>
+        
+        <div class="menu-slideshow">
+            <img name="slide" alt="" width="600" height="450">
+        </div>
+
+        <div class="slide">
+
+            <button onclick="back()"><span class="material-symbols-sharp">arrow_back_ios</span></button>
+
+            <img id="slide2" src="./image/gify.gif" width="40" height="420" alt>
+        
+            <button onclick="next()"><span class="material-symbols-sharp">arrow_forward_ios</span></button>
+            <div class="food-text">
+            <h1>FOOD IS <span>LIFE</span></h1>
+            <p>Such a beautiful thing, don't you think?<br><br>Healthy food to have a healthy lifestyle</p>
+            </div>
+        </div>
+
+    
+   
+    </section>    
+
+
+
+    
+
+
+<!--==========================MAIN-CONTENT===================================-->
+
+        <section class="main-content" id="main">
+
+
+            <h2>KAN-<span>ANAN</span></h2>
+            <div class="user-list-items">
+
+                <div class="shop-name-title">
+
+                    <div class="user-address">
+                        <span class="material-symbols-sharp">
+                            location_on</span>
+                            <h1>ADDRESS</h1>
+                            <form>
+                                <input type="search" placeholder="Address">
+                                <button type="button">Search</button>
+                            </form>
+                     
+                        </div>
+
+                    <h4>MENU</h4>
+                </div>
+
+            <div class="items">
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/1.jpg" alt="" width="120">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Beef Steak</h4>
+                        <p>50 Pesos Per Serve</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/2.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Ginataang Baboy</h4>
+                        <p>70 Pesos only Per Serve</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/3.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Adobong Baboy</h4>
+                        <p>60 Pesos only Per Serve</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/4.webp" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Tinolang Isda</h4>
+                        <p>40 Pesos only for 1 Serve</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/5.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Hotsilog</h4>
+                        <p>50 Pesos only for 1 serve</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/6.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Lumpia</h4>
+                        <p>15 Pesos only for 1 Pieces</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/7.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Tortang talong</h4>
+                        <p>20 Pesos only for 1 Pieces</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/8.jfif" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Rice</h4>
+                        <p>10 Pesos only for 1 Serve</p>
+                    </a>
+                </div>
+
+                <div class="item">
+                    <a href="">
+                        <img src="./image/9.jpg" width="120" alt="">
+                        <h4><span class="material-symbols-sharp">
+                            favorite
+                            </span>Chicken liver</h4>
+                        <p>30 Pesos only for 1 Serve</p>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+    
+
+
+
+
+<!--==========================SECOND CONTAINER===================================-->
+
+    <section id="secondcontent" class="second-content">
+        <div class="food-list">
+            <h1>Food List Recipes</h1>
+        </div>
+
+        <div class="food-images">
+            <ul>
+                <li>
+                    <img src="./image/1.jpg" alt="" width="120">
+                    <h1>Beef Steak</h1>
+                    <p>Marinate the steak in lemon juice,soy sauce,garlic,ginger and pepper for 30 minutes.
+                        Pan fry in 2 tbsp of oil add the marinated steak cook slow until done.
+                        When steak are cooked remove them from the pan onto a serving dish.
+                        Dissolve the flour with water.
+                </li>
+                <li>
+                    <img src="./image/2.jpg" alt="" width="120">
+                    <h1>Ginataang Baboy</h1>
+                    <p>this easy to prepare, rich and savory dish uses a distinct thick cream that comes from “gata” or coconut milk. This popular  Filipino dish uses pork belly, coconut  cream and milk, garlic, red onions,  fish sauce to give the dish a bit of tang and sili or chili pepper for a bit more heat.  </p>
+                </li>
+                <li>
+                    <img src="./image/3.jpg" alt="" width="120">
+                    <h1>Adobong Baboy</h1>
+                    <p>This is a recipe post for Filipino Pork Adobo. It is a dish composed of pork slices cooked in soy sauce, vinegar, and garlic. There are version wherein onions are also added. Adobo is a popular dish in the Philippines, along with Sinigang.</p>
+                </li>
+                <li>
+                    <img src="./image/4.webp" alt="" width="120">
+                    <h1>Tinolang Isda</h1>
+                    <p>Tinolang Isda or Fish in Ginger Broth is a type of Filipino clear soup dish wherein fish such as Tuna is cooked in a broth composed of ginger, lemongrass and other vegetables. It is a simple dish that can be enjoyed during dinner with the entire family.</p>
+                </li>
+                <li>
+                    <img src="./image/5.jpg" alt="" width="120">
+                    <h1>Hotsilog</h1>
+                    <p>Hotsilog is a meal composed of hotdogs, garlic fried rice, and fried egg. In a Filipino household, this is commonly eaten for breakfast with a condiment of banana ketchup and some pickled shredded papaya (atchara) on the side.</p>
+                </li>
+                <li>
+                    <img src="./image/6.jpg" alt="" width="120">
+                    <h1>Lumpia</h1>
+                    <p>Lumpia or Lumpiang Shanghai is a type of Filipino egg roll. The basic filling is composed of ground pork along with minced onions, carrots, and seasonings such as salt and ground black pepper. This recipe post is all about how to make basic lumpia. Feel free to use this as a baseline.</p>
+                </li>
+                <li>
+                    <img src="./image/7.jpg" alt="" width="120">
+                    <h1>Tortang talong</h1>
+                    <p>Beating an egg can make for a great ingredient  in several recipes around the world. From baked goods to classic omelettes, it is endlessly versatile, and goes with both sweet and savory dishes. But who knew that some beaten eggs, eggplant, and the right seasonings could create the ever useful and delicious Tortang Talong?</p>
+                </li>
+                <li>
+                    <img src="./image/8.jfif" alt="" width="120">
+                    <h1>Rice</h1>
+                    <p>Rice is a rich source of carbohydrates, the body's main fuel source. Carbohydrates can keep you energized and satisfied, and are important for fueling exercise. Brown rice, especially, is an excellent source of many nutrients, including fiber, manganese,  selenium, magnesium, and B vitamins.</p>
+                </li>
+                <li>
+                    <img src="./image/9.jpg" alt="" width="120">
+                    <h1>Chicken liver</h1>
+                    <p>Crispy Chicken Livers a la Bistek dressed with onions and a tangy lemon-soy sauce  mixture. Crunchy and tasty, they’re perfect as an appetizer or dinner meal! Loaded with garlic and onions and lightly doused in a citrus sauce made of calamansi juice and soy sauce, I suppose, crispy chicken livers a la bistek is the closest thing to describing its flavor profile.</p>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+
+
+
+
+<!--==========================ORDERING SECTION===================================-->
+
+    <section id="ordersection" class="ordering-section">
+            <div class="order-header">
+                <h1>ORDER</h1>
+                <h2>KAN<span>-ANAN</span></h2>
+            </div>
+
+    
+            <div class="order-form">
+        
+                <ul>
+                    <li>
+                        <img src="./image/1.jpg" alt="" width="120">
+                        <h1>Beef Steak</h1>
+                        
+                    </li>
+                    <li>
+                        <img src="./image/2.jpg" alt="" width="120">
+                        <h1>Ginataang Baboy</h1>
+                        
+                    </li>
+                    <li>
+                        <img src="./image/3.jpg" alt="" width="120">
+                        <h1>Adobong Baboy</h1>
+                        
+                    </li>
+                    <li>
+                        <img src="./image/4.webp" alt="" width="120">
+                        <h1>Tinolang Isda</h1>
+                       
+                    </li>
+                    <li>
+                        <img src="./image/5.jpg" alt="" width="120">
+                        <h1>Hotsilog</h1>
+                        
+                    </li>
+                    <li>
+                        <img src="./image/6.jpg" alt="" width="120">
+                        <h1>Lumpia</h1>
+                       
+                    </li>
+                    <li>
+                        <img src="./image/7.jpg" alt="" width="120">
+                        <h1>Tortang talong</h1>
+                       
+                    </li>
+                    <li>
+                        <img src="./image/8.jfif" alt="" width="120">
+                        <h1>Rice</h1>
+                    </li>
+                    <li>
+                        <img src="./image/9.jpg" alt="" width="120">
+                        <h1>Chicken liver</h1>
+                    </li>
+                </ul>
+
+                <form action="" method="">
+                    <h3>Order Form</h3>
+                    <input type="text" placeholder="Fullname">
+                    <input type="text" placeholder="Address">
+                    <textarea rows="10" placeholder="Write your message..." required></textarea>
+
+                    <button>ORDER</button>
+                </form>
+
+            </div>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.193793161563!2d124.75235125872192!3d8.654638000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffe437ece7fed3%3A0x528a61695fea98fd!2sUniversity%20of%20Science%20and%20Technology%20of%20Southern%20Philippines-%20Jasaan%20Campus!5e0!3m2!1sen!2sph!4v1665988842420!5m2!1sen!2sph" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    
+            
+    </section>
+
+
+
+
+
+
+
+<!--================================FOOTER========================-->
+
+    <section  id="footer" class="footer-content">
+
+            <div class="user-link-option">
+
+                <div class="our-menu">
+                    <h2>OUR MENU</h2>
+
+                    <a href=""><span class="material-symbols-sharp">
+                        arrow_right_alt
+                        </span>Beef Steak</a>
+
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            arrow_right_alt
+                            </span>Ginataang Baboy
+                        </a>
+
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            arrow_right_alt
+                            </span>Adobong Baboy
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            arrow_right_alt
+                            </span>Tinolang Isda
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            arrow_right_alt
+                            </span>BreakFast Meal
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            arrow_right_alt
+                            </span>Lumpia
+                        </a>
+                </div>
+        
+
+           
+                <div class="our-link">
+                    <h2>OUR LINK</h2>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            google_plus_reshare
+                            </span>FACEBOOK<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="File:Facebook Logo (2019).png - Wikipedia" data-noaft="1" style="width: 40px; height: 40px;">
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            google_plus_reshare
+                            </span>TWITTER<img src="https://www.pngkey.com/png/full/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Download Twitter Logo Png Transparent Background - Logo Twitter Png PNG  Image with No Background - PNGkey.com" data-noaft="1" style="width: 40px; height: 40px;">
+                        </a>
+                    <a href="">
+                        <span class="material-symbols-sharp">
+                            google_plus_reshare
+                            </span>INSTAGRAM<img src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Instagram logo and symbol, meaning, history, PNG" style="width: 60px; height: 40px;">
+                        </a>
+                    <a href=""><span class="material-symbols-sharp">
+                        google_plus_reshare
+                        </span>TIKTOK<img src="http://store-images.s-microsoft.com/image/apps.18774.13634052595610511.c45457c9-b4af-46b0-8e61-8d7c0aec3f56.600a0bb2-af98-4646-9d97-69cb3a90f3ce" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Microsoft Apps" data-noaft="1" style="width: 80px; height: 40px;">
+                </div>
+        
+                </div>
+
+                <div class="owner-lincense">
+                    <p>© 2022 KAN-ANA All rights reserved.</p>
+                </div>
+
+    </section>
+
+   
+
+
+    <script defer src="function.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@media screen and (max-width: 480px) {
+/*======================MAIN CONTENT ==================*/
+.header
+{
+    left: 160px;
+    width: calc(100% - 161px);
+}
+.header .dashboard h1 
+{
+    font-size: 22px;
+    font-weight: 500;
+}
+/*=======================SEARCH BAR===========================*/
+.header .dashboard form 
+{  
+    height: 50px;
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+}
+.header .dashboard form, input 
+{
+    top: -4px;
+    width: 1%;
+    margin-left: 4px;
+    transition: all 0.5s ease;
+}
+.header .dashboard form button 
+{
+    top: 3px;
+    left: 125px;
+    width: 56px;
+}
+/*=============SEARCH BAR ACTIVE FUNTION===========*/
+.header .user-search-bar .active 
+{
+    left: 1px;
+    width: calc(20% - -85px);
+    background-color: #ffffff;
+}
+/*======================USER PROFILE======================*/
+.header .dashboard .user-profile
+{
+    padding: 10px 5px 3px;
+    margin-top: 10px;
+}
+/* ==================SIDEBAR AND MAIN CONTENT FUNCTION JAVASCRIPT==============*/
+.sidebar.active ~ .header
+{
+    left: 0;
+    width: calc(100% - 1px);
+}
+}

@@ -1,0 +1,100 @@
+/*======================HEADER===========================*/
+.header
+{
+    background: #464646;
+    position: fixed;
+    z-index: 100;
+    left: 60px;
+    height: auto;
+    width: calc(100% - 61px);
+    box-shadow: 1px 1px 2px 1px;
+    transition: all 0.5s ease;
+    overflow-x: hidden;
+}
+/* ==================SIDEBAR AND MAIN CONTENT FUNCTION JAVASCRIPT==============*/
+.sidebar.active ~ .header
+{
+    left: 210px;
+    width: calc(100% - 211px);
+}
+.shop-name-title .active
+{
+    right: 3rem;
+    transition: all 1.5s ease;
+}
+/*=======================DASHBOARD=============================*/
+.header .dashboard
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    min-width: 90%;
+    top: 0;
+    padding: 10px;
+}
+.header .dashboard span 
+{
+    background: #00aa6c;
+    max-width: 100%;
+    padding: 10px 20px;
+    position: relative;
+    left: 2px;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+.header .dashboard h1 
+{
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+}
+/*=======================SEARCH BAR===========================*/
+.header .dashboard form 
+{
+    border-radius: 3rem;
+    height: 50px;
+    min-width: 90%;
+    margin: auto;
+    position: relative;
+    right: 100px;
+}
+.header .dashboard form, input 
+{
+    border: none;
+    border-radius: 3rem;
+    padding: 10px 10px 10px;
+    outline: none;
+    position: relative;
+    top: -4px;
+    width: 10%;
+    background: #464646;
+    margin: auto;
+    transition: all 0.5s ease;
+    
+}
+.header .dashboard button 
+{
+    border: none;
+    border-radius: 3rem;
+    position: absolute;
+    top: 3px;
+    left: 15rem;
+    background: #464646;
+}
+/*=============SEARCH BAR ACTIVE FUNTION===========*/
+.header .user-search-bar .active 
+{
+    left: 1px;
+    width: calc(100% - -80px);
+    background-color: #ffffff;
+}
+/*==========================USER PROFILE=========================*/
+.header .dashboard .user-profile
+{
+  mix-blend-mode: lighten;
+  color: #ffffff;
+  border-radius: 3rem;
+
+}

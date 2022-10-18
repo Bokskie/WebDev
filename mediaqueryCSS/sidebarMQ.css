@@ -1,0 +1,43 @@
+/*===================MEDIA QUERY===================*/
+@media screen and (max-width: 480px) {
+/*===========CELLPHONE SIZE MEDIA QUERY===============*/
+        
+ /*===================SIDE BAR MEDIA QUERY===============*/
+.sidebar
+{
+    width: 160px;   
+    height: 100vh;
+}
+.sidebar.active
+{
+    width: 0;
+    transition: all 0.5s ease;
+}
+.sidebar .sidebar-branch img 
+{
+    mix-blend-mode: darken;
+    width: 30px;
+}
+.sidebar .sidebar-branch h2 
+{
+    left: 46px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.sidebar-option a
+{
+    line-height: 3rem;
+    gap: 2.2rem;
+}
+.sidebar-option span 
+{
+    line-height: 3rem;
+    font-size: 20px;
+}
+.sidebar-option h3 
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+}

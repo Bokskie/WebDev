@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+:root 
+{
+  
+    --fds-black-alpha-05: rgba(0, 0, 0, 0.05);
+    --fds-black-alpha-10: rgba(0, 0, 0, 0.1);
+    --fds-black-alpha-15: rgba(0, 0, 0, 0.15);
+    --fds-black-alpha-20: rgba(0, 0, 0, 0.2);
+    --fds-black-alpha-30: rgba(0, 0, 0, 0.3);
+}
+::before::after
+{
+    box-sizing: border-box;
+}
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+}
+body 
+{
+    max-width: 100%;
+    height: auto;
+    font-family: sans-serif;
+    background-color: #ffffff;
+}
+@media screen and (max-width:480){
+   .down-content
+   {
+       font-size: 10px;
+   }
+}
+/*=============================MAIN-CONTENT======================*/
+.main-content
+{
+    position: relative;
+    background: #eee;
+    left: 60px;
+    top: 5.2rem;
+    width: calc(100% - 61px);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+.main-content span 
+{
+    color: #00aa6c;
+    transition: all 0.5s ease;
+}
+/*====================SIDEBAR ACTIVE TO USER-CENTER CONTENT===================*/
+.sidebar.active ~ #main
+{
+    left: 211px;
+    width: calc(100% - 211px);
+}
+/*=======================USER ADDRESS=========================*/
+.main-content .user-address
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #464646;
+    border-radius: 3rem;
+    width: 60%;
+    padding: 5px;
+    padding-top: 10px;
+}
+.main-content .user-address span 
+{
+    position: relative;
+   
+}
+.main-content .user-address h1 
+{
+    color: #00aa6c;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+.main-content .user-address input 
+{
+    width: 60%;
+}
+.main-content .user-address button
+{
+    border-radius: 3rem;
+    padding: 8px;
+    background: #00aa6c;
+    cursor: pointer;
+}
+.main-content .user-address input:hover 
+{
+    background: #20ffad;
+}
+/*=======================SHOP TITLE CENTER==========================*/
+.main-content .shop-name-title
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.main-content h2
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.main-content .shop-name-title h4
+{
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+/*==========================CENTER ITEMS=========================*/
+.main-content .items 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 2rem;
+    width: 92%;
+    box-sizing: content-box;
+    overflow-x: hidden;
+    padding-bottom: 42px;
+}
+.main-content .items h4
+{
+    color: #000000;
+}
+.main-content .items p
+{
+    position: relative;
+    top: 20px;
+    color: #000000;
+}
+.main-content .items span 
+{
+    position: relative;
+    top: 6px;
+    right: 4px;
+    background: #ffffff;
+    color: rgb(255, 128, 151);
+    border-radius: 3rem;
+    padding: 4px;
+}
+/*===============================ITEMS HOVER=========================*/
+.main-content .items span:hover 
+{
+    background: rgb(255, 0, 0);
+    border-radius: 3rem; 
+}
+.main-content .items img:hover
+{
+    padding: 10px;
+}
+.main-content .items .item:hover
+{
+    top: 10px;
+    position: relative;
+}
+/*=============================IMAGE 1=======================*/
+.main-content .items .item
+{
+    
+    border-radius: 3rem;
+    box-shadow: #464646 6px 10px 2px 4px;
+    border: 2px solid #000000;
+    background: #20ffad;
+    padding: 20px;
+    width: 190px;
+    height: 40vh;
+}
+.main-content .items .item img 
+{
+    border-radius: 3rem;
+    color: #00aa6c;
+    box-shadow: 2px 4px 5px;
+    width: 120px;
+    height: 90px;
+} 
